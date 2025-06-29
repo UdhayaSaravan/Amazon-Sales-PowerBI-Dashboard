@@ -60,15 +60,15 @@ Focus: Time-based analysis and ranking performance by product/category.
 ## 🧠 Key DAX Measures & Calculated Columns
 
 ```DAX
-Total Sales = SUM('amazon_sales_data_2025'[total sales])
+Total Sales = SUM(amazon_sales_data[total sales])
 
-Total Orders = DISTINCTCOUNT('amazon_sales_data_2025'[orderId])
+Total Orders = DISTINCTCOUNT(amazon_sales_data[orderId])
 
 Average Order Value = [Total Sales] / [Total Orders]
 
-MonthYear = FORMAT('amazon_sales_data_2025'[date], "MMM YYYY")
+MonthYear = FORMAT(amazon_sales_data[date], "MMM YYYY")
 
-Weekday = FORMAT('amazon_sales_data_2025'[date], "dddd")
+Weekday = FORMAT(amazon_sales_data[date], "dddd")
 
 ---
 
@@ -79,7 +79,11 @@ Below are screenshots from the Power BI dashboard illustrating interactive visua
 
 ### 🔹 Page 1: Sales Overview
 ![Sales Overview](E:\Data Analytics projects\pro1 page1.png)
+![pro1 page1](https://github.com/user-attachments/assets/c670e5ab-3f15-4d14-8dda-9fe3e51055a4)
+
 
 ### 🔹 Page 2: Advanced Insights
 ![Advanced Insights](E:\Data Analytics projects\pro1 page2.png)
+![pro1 page2](https://github.com/user-attachments/assets/f0df63f7-2f76-423a-8ad2-57fbdab27c35)
+
 
